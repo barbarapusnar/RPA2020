@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DrugaMVC.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Seznam</h2>
+
+<p>
+    @Html.ActionLink("Nov", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentIme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Leta)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentIme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Leta)
+        </td>
+        <td>
+            @Html.ActionLink("Uredi", "Edit", new { id=item.StudentID }) |
+            @Html.ActionLink("Podrobnosti", "Details", new { id=item.StudentID }) |
+            @Html.ActionLink("Briši", "Delete", new { id=item.StudentID })
+        </td>
+    </tr>
+}
+
+</table>
