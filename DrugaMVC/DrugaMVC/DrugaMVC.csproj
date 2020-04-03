@@ -167,6 +167,7 @@
     <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\TestRazorja.cshtml" />
     <Content Include="Views\Student\UporabaModela.cshtml" />
+    <Content Include="Views\Student\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
