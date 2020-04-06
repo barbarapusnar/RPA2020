@@ -1,0 +1,51 @@
+﻿@model IEnumerable<NajprejKoda.Models.Film>
+
+@{
+    ViewBag.Title = "Isci";
+}
+
+<h2>Isci</h2>
+
+@using (Html.BeginForm())
+{
+ <p>Naslov: @Html.TextBox("niz")</p>
+ <br/>
+ <p>Tip:    @Html.DropDownList("ftip","Vsi")</p>
+ <input type="submit" value="Filtriraj"/>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Naslov)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Leto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cena)
+        </th>
+      
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naslov)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Leto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cena)
+        </td>
+        
+    </tr>
+}
+
+</table>

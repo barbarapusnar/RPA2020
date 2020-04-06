@@ -19,7 +19,28 @@ namespace NajprejKoda.Controllers
         {
             return View(db.Films.ToList());
         }
+        public ActionResult Isci(string niz,string ftip)
+        {
+            //pridobi tipe filmov iz PB
+            var tipLista = new List<string>();
+            var tipQuery = (from b in db.Films
+                            orderby b.Tip
+                            select b.Tip).Distinct();
+            tipLista.AddRange(tipQuery);
+            ViewBag.ftip = new SelectList(tipLista); //posreduj na spletno stran
 
+            var filmi = from a in db.Films
+                        select a; //vsi filmi
+            if (!string.IsNullOrEmpty(niz))
+            {
+                filmi = filmi.Where(s => s.Naslov.Contains(niz));
+            } //filter po naslovu
+            if (!string.IsNullOrEmpty(ftip))
+            {
+                filmi = filmi.Where(s => s.Tip == ftip);
+            } //filter po tipu
+            return View(filmi);
+        }
         // GET: Filmi/Details/5
         public ActionResult Details(int? id)
         {
