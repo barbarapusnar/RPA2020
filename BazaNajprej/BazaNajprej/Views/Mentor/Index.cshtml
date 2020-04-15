@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BazaNajprej.Models.Mentor>
+
+@{
+    ViewBag.Title = "Seznam";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Ustvari novega", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           Ime
+        </th>
+        <th>
+           Priimek
+        </th>     
+        <th>
+            @Html.DisplayNameFor(model => model.MenVloga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MenNaziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MenUstanova)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MenIme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MenPriimek)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.MenVloga)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MenNaziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MenUstanova)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Uredi", "Edit", new { id=item.MenId }) |
+            @Html.ActionLink("Podrobnosti", "Details", new { id=item.MenId }) |
+            @Html.ActionLink("Briši", "Delete", new { id=item.MenId })
+        </td>
+    </tr>
+}
+
+</table>

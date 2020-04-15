@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="left col-md-2">
+                @RenderSection("Levo", false)
+            </div>
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+            <div class="right col-md-2">
+                @RenderSection("Desno", false)
+            </div>
+        </div>
+        <footer class="panel-footer">
+            @RenderSection("footer", false)
+        </footer>
+    </div>
+</body>
+</html>
