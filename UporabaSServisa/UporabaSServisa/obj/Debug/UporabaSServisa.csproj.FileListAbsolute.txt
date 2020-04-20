@@ -1,0 +1,12 @@
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\UporabaSServisa.exe.config
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\UporabaSServisa.exe
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\UporabaSServisa.pdb
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\Newtonsoft.Json.dll
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\System.Net.Http.Formatting.dll
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\Newtonsoft.Json.xml
+E:\RPA2020\UporabaSServisa\UporabaSServisa\bin\Debug\System.Net.Http.Formatting.xml
+E:\RPA2020\UporabaSServisa\UporabaSServisa\obj\Debug\UporabaSServisa.csprojAssemblyReference.cache
+E:\RPA2020\UporabaSServisa\UporabaSServisa\obj\Debug\UporabaSServisa.csproj.CoreCompileInputs.cache
+E:\RPA2020\UporabaSServisa\UporabaSServisa\obj\Debug\UporabaSServisa.csproj.CopyComplete
+E:\RPA2020\UporabaSServisa\UporabaSServisa\obj\Debug\UporabaSServisa.exe
+E:\RPA2020\UporabaSServisa\UporabaSServisa\obj\Debug\UporabaSServisa.pdb
