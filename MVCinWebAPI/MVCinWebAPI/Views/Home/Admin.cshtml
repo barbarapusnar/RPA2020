@@ -1,0 +1,53 @@
+﻿@model MVCinWebAPI.Models.Produkt
+
+@{
+    ViewBag.Title = "Admin";
+}
+
+<h2>Admin</h2>
+<div class="content">
+    <div class="float-left">
+        <ul id="update-products" data-bind="foreach:produkti">
+            <li>
+                <div>
+                    <div class="item">ID produkta</div>
+                    <span data-bind="text:$data.Id"></span>
+                </div>
+                <div>
+                    <div class="item">Ime </div>
+                    <input type="text" data-bind="value:$data.Ime"/>
+                </div>
+                <div>
+                    <div class="item">Cena</div>
+                    <input type="text" data-bind="value:$data.Cena"/>
+                </div>
+                <div>
+                    <div class="item">Stroški </div>
+                    <input type="text" data-bind="value:$data.Stroški" />
+                </div>
+                <input type="button" value="Posodobi" data-bind="click:$root.update"/>
+                <input type="button" value="Izbriši" />
+            </li>
+        </ul>
+    </div>
+</div>
+@section Scripts
+    {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/knockout-3.5.1.js"></script>
+    <script type="text/javascript">
+        function ProduktViewModel()
+        {
+            var self = this;
+            self.produkti = ko.observableArray();
+            var baseUri = '@ViewBag.ApiUrl';
+            $.getJSON(baseUri, self.produkti);
+            self.update = function (produkt)
+            { $.ajax({ type: "PUT", url: baseUri + '/' + produkt.Id, data: produkt }); } 
+        }
+        $(document).ready(function () {
+            ko.applyBindings(new ProduktViewModel());
+        })
+    </script>
+}
+
