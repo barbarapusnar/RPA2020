@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="VajaPostavitve.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VajaPostavitve"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Text="Title 1" FontSize="24" Margin="10"/>
+        <TextBlock Grid.Row="2" Text="Title 2" FontSize="24" Margin="10"/>
+        <TextBlock Grid.Row="4" Text="Title 3" FontSize="24" Margin="10"/>
+        <StackPanel Width="300" Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="10">
+            <TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium nisi lacus, nec blandit urna sollicitudin et. Vivamus rhoncus nunc eget libero scelerisque, ut rhoncus eros sagittis. Curabitur suscipit mauris non efficitur lobortis. Curabitur efficitur ac nulla quis rutrum. Nunc eget lacus sit amet tellus pharetra commodo eu at risus. Proin tempor facilisis ex a vestibulum. Vestibulum et ultrices eros. Integer quis turpis euismod, aliquam diam eu, pharetra leo. Nunc sit amet luctus nulla, ut convallis ipsum. Morbi ac dolor risus. "/>
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="100" Height="30" Fill="Green"/>
+                <Rectangle Width="100" Height="30" Fill="Black"/>
+                <Rectangle Width="100" Height="30" Fill="Red"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Width="300" Orientation="Vertical" Grid.Row="3" Grid.Column="1" Margin="10">
+            <TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium nisi lacus, nec blandit urna sollicitudin et. Vivamus rhoncus nunc eget libero scelerisque, ut rhoncus eros sagittis. Curabitur suscipit mauris non efficitur lobortis. Curabitur efficitur ac nulla quis rutrum. Nunc eget lacus sit amet tellus pharetra commodo eu at risus. Proin tempor facilisis ex a vestibulum. Vestibulum et ultrices eros. Integer quis turpis euismod, aliquam diam eu, pharetra leo. Nunc sit amet luctus nulla, ut convallis ipsum. Morbi ac dolor risus. "/>
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="100" Height="30" Fill="Red"/>
+                <Rectangle Width="100" Height="30" Fill="Black"/>
+                <Rectangle Width="100" Height="30" Fill="Blue"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Width="300" Orientation="Vertical" Grid.Row="5" Grid.Column="1" Margin="10">
+            <TextBlock TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium nisi lacus, nec blandit urna sollicitudin et. Vivamus rhoncus nunc eget libero scelerisque, ut rhoncus eros sagittis. Curabitur suscipit mauris non efficitur lobortis. Curabitur efficitur ac nulla quis rutrum. Nunc eget lacus sit amet tellus pharetra commodo eu at risus. Proin tempor facilisis ex a vestibulum. Vestibulum et ultrices eros. Integer quis turpis euismod, aliquam diam eu, pharetra leo. Nunc sit amet luctus nulla, ut convallis ipsum. Morbi ac dolor risus. "/>
+            <StackPanel Orientation="Horizontal">
+                <Rectangle Width="100" Height="30" Fill="Blue"/>
+                <Rectangle Width="100" Height="30" Fill="Black"/>
+                <Rectangle Width="100" Height="30" Fill="Yellow"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
+
