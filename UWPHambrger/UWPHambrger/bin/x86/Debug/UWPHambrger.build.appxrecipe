@@ -373,8 +373,11 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\Financial.png">
+      <PackagePath>Financial.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\Food.png">
+      <PackagePath>Food.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -403,11 +406,20 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\UWPHambrger.xr.xml">
       <PackagePath>UWPHambrger.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\Financial.xbf">
+      <PackagePath>Financial.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\Food.xbf">
+      <PackagePath>Food.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

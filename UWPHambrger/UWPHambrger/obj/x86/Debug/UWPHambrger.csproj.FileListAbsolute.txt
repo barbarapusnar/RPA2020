@@ -218,3 +218,13 @@ E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\qualifiers.txt.intermediate
 E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\ProjectArchitectures.txt
 E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758516200000000.json
+E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\Financial.xbf
+E:\RPA2020\UWPHambrger\UWPHambrger\bin\x86\Debug\Food.xbf
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Financial.g.i.cs
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Financial.g.cs
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Food.g.i.cs
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Food.g.cs
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Financial.xaml
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Food.xaml
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Financial.xbf
+E:\RPA2020\UWPHambrger\UWPHambrger\obj\x86\Debug\Food.xbf

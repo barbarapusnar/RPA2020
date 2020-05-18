@@ -16,6 +16,8 @@
         <RelativePanel>
             <Button Name="btnHambrger" FontFamily="Segoe MDL2 Assets" FontSize="36"
                     Content="&#xE700;" Click="BtnHambrger_Click"/>
+            <TextBlock RelativePanel.RightOf="btnHambrger"
+                       Name="tbNaslov" Text="Financial" FontSize="30" FontWeight="Bold"/>
         </RelativePanel>
         <SplitView Name="mojSplitView" Grid.Row="1" OpenPaneLength="200"
                    CompactPaneLength="56" DisplayMode="CompactInline">
@@ -26,20 +28,20 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36"
                                        Text="&#xE72D;"/>
-                            <TextBlock Text="Share" FontSize="24" Margin="20,0,0,0"/>
+                            <TextBlock Text="Financial" FontSize="24" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="itemFav">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36"
                                        Text="&#xE734;"/>
-                            <TextBlock Text="Favorites" FontSize="24" Margin="20,0,0,0"/>
+                            <TextBlock Text="Food" FontSize="24" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <TextBlock Name="tbRezultat"/>
+                <Frame Name="mojFrame"/>
             </SplitView.Content>
         </SplitView>
     </Grid>

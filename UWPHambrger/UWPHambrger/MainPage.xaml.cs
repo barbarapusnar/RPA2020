@@ -25,6 +25,7 @@ namespace UWPHambrger
         public MainPage()
         {
             this.InitializeComponent();
+            mojFrame.Navigate(typeof(Financial));
         }
 
         private void BtnHambrger_Click(object sender, RoutedEventArgs e)
@@ -34,10 +35,13 @@ namespace UWPHambrger
 
         private void LstIkone_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (itemShare.IsSelected) { tbRezultat.Text = "Deli z vsemi"; }
+            if (itemShare.IsSelected) {
+                tbNaslov.Text = "Financial";
+                mojFrame.Navigate(typeof(Financial)); }
             else
             {
-                tbRezultat.Text = "Priljubljene";
+                tbNaslov.Text = "Food";
+                mojFrame.Navigate(typeof(Food));
             }
         }
     }
