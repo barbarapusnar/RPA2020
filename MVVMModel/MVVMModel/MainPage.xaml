@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="MVVMModel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MVVMModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.DataContext>
+        <local:MojViewModel x:Name="mojVM"/>
+    </Page.DataContext>
+    <Page.Resources>
+        <DataTemplate x:Key="predloga">
+            <Grid Width="200" Height="100">
+                <Grid.Background>
+                    <SolidColorBrush Color="{Binding Barva}"/>
+                </Grid.Background>
+                <StackPanel VerticalAlignment="Bottom">
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="Black" Opacity="0.75"/>
+                    </StackPanel.Background>
+                    <TextBlock FontSize="20" Margin="20" Text="{Binding Ime}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- prva vrstica je naslov-->
+        <TextBlock Text="{Binding Naslov}" FontSize="36" FontWeight="Bold" Margin="10"/>
+        <!--druga vrstica je vse ostalo-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <GridView ItemsSource="{Binding Zapisi}" ItemTemplate="{StaticResource predloga}"
+                      IsItemClickEnabled="True" SelectedItem="{Binding TekočiZapis,Mode=TwoWay,
+                                                               UpdateSourceTrigger=PropertyChanged}">
+            </GridView>
+            <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0,20,0,0">
+                <ContentControl Content="{Binding TekočiZapis,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+                                ContentTemplate="{StaticResource predloga}"/>
+                <Button x:Name="btnUkaz" Content="Naredi tekočega zelenega" Margin="0,10,0,0"
+                        Command="{Binding NarediZeleno}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

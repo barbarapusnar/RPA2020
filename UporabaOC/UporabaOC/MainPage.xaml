@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -34,5 +34,19 @@
             </ComboBox.ItemTemplate>
             
         </ComboBox>
+        <Button Grid.Row="3" Name="btnNov" Content="Dodaj" Margin="10" Width="100" Height="50" Click="BtnNov_Click"/>
+        <GridView Grid.Row="4" Grid.ColumnSpan="2" ItemsSource="{x:Bind Kontakti}" Margin="20">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="local:Contact">
+                    <StackPanel HorizontalAlignment="Center" Margin="10">
+                        <Image Source="{x:Bind PotAvatar}" Width="100" Height="100"/>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                            <TextBlock Text="{x:Bind Ime}" Margin="0,0,5,0"/>
+                            <TextBlock Text="{x:Bind Priimek}"/>
+                        </StackPanel>
+                    </StackPanel>
+                 </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,6 +24,7 @@ namespace UporabaOC
     public sealed partial class MainPage : Page
     {
         List<Icon> Ikone;
+        ObservableCollection<Contact> Kontakti;
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,6 +35,15 @@ namespace UporabaOC
             Ikone.Add(new Icon { PotIkone = "Assets/female-01.png" });
             Ikone.Add(new Icon { PotIkone = "Assets/female-02.png" });
             Ikone.Add(new Icon { PotIkone = "Assets/female-03.png" });
+            Kontakti = new ObservableCollection<Contact>();
+        }
+
+        private void BtnNov_Click(object sender, RoutedEventArgs e)
+        {
+            string avatar = ((Icon)(cboAvatar.SelectedValue)).PotIkone;
+            Kontakti.Add(new Contact { Ime = txtIme.Text, Priimek = txtPriimek.Text, PotAvatar = avatar });
+            txtIme.Text = "";txtPriimek.Text = "";cboAvatar.SelectedIndex = -1;
+            txtIme.Focus(FocusState.Programmatic);
         }
     }
 }

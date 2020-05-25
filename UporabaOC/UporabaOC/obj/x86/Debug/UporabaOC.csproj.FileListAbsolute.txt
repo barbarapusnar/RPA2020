@@ -123,7 +123,6 @@ E:\RPA2020\UporabaOC\UporabaOC\bin\x86\Debug\System.Xml.XDocument.dll
 E:\RPA2020\UporabaOC\UporabaOC\bin\x86\Debug\System.Xml.XmlDocument.dll
 E:\RPA2020\UporabaOC\UporabaOC\bin\x86\Debug\System.Xml.XmlSerializer.dll
 E:\RPA2020\UporabaOC\UporabaOC\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-E:\RPA2020\UporabaOC\UporabaOC\obj\x86\Debug\UporabaOC.csprojAssemblyReference.cache
 E:\RPA2020\UporabaOC\UporabaOC\obj\x86\Debug\App.g.i.cs
 E:\RPA2020\UporabaOC\UporabaOC\obj\x86\Debug\App.g.cs
 E:\RPA2020\UporabaOC\UporabaOC\obj\x86\Debug\MainPage.g.i.cs

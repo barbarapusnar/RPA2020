@@ -1,0 +1,1 @@
+E:\RPA2020\MVVMModel\MVVMModel\MVVMModel.csproj;x86
