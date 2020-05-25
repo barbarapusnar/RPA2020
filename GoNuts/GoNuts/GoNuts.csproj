@@ -119,6 +119,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kava.xaml.cs">
+      <DependentUpon>Kava.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Krofi.xaml.cs">
       <DependentUpon>Krofi.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Kava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Krofi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

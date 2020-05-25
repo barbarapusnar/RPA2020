@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="UporabaOC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UporabaOC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Ime kontakta" VerticalAlignment="Center" Margin="10" Grid.Row="0" Grid.Column="0"/>
+        <TextBox Name="txtIme" Margin="10" Grid.Row="0" Grid.Column="1"/>
+        <TextBlock Text="Priimek kontakta" VerticalAlignment="Center" Margin="10" Grid.Row="1" Grid.Column="0"/>
+        <TextBox Name="txtPriimek" Margin="10" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock Text="Avatar" VerticalAlignment="Center" Margin="10" Grid.Row="2" Grid.Column="0"/>
+        <ComboBox Name="cboAvatar" Margin="10" Grid.Row="2" Grid.Column="1" Height="50" Width="100"
+                  ItemsSource="{x:Bind Ikone}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate x:DataType="local:Icon">
+                    <Image Source="{x:Bind PotIkone}" Width="40" Height="40"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            
+        </ComboBox>
+    </Grid>
+</Page>

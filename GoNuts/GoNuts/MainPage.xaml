@@ -40,7 +40,7 @@
                 <TextBlock Text="Krofi" Foreground="White"/>
             </StackPanel>
         </Button>
-            <Button Style="{StaticResource stilGumba}" Grid.Column="1">
+            <Button Style="{StaticResource stilGumba}" Grid.Column="1" Click="Button_Click_1">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Assets/coffee-icon.png" Style="{StaticResource stilIkone}"/>
                     <TextBlock Text="Kava" Foreground="White"/>
