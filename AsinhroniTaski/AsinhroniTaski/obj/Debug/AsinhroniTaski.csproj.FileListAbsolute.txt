@@ -5,3 +5,10 @@ E:\Barbara\RPA\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.csprojAsse
 E:\Barbara\RPA\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.csproj.CoreCompileInputs.cache
 E:\Barbara\RPA\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.exe
 E:\Barbara\RPA\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.pdb
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\bin\Debug\AsinhroniTaski.exe.config
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\bin\Debug\AsinhroniTaski.exe
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\bin\Debug\AsinhroniTaski.pdb
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.csprojAssemblyReference.cache
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.csproj.CoreCompileInputs.cache
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.exe
+E:\RPA2020\AsinhroniTaski\AsinhroniTaski\obj\Debug\AsinhroniTaski.pdb

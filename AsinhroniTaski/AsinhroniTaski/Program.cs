@@ -32,20 +32,20 @@ namespace AsinhroniTaski
             //Console.WriteLine("Zajtrk je pripravljen!");
 
             //1. asinhrono -nič ne spremenim
-            Coffee cup = PourCoffee();
-            Console.WriteLine("coffee is ready");
-            Egg eggs = await FryEggsAsync(2);
-            Console.WriteLine("eggs are ready");
-            Bacon bacon = await FryBaconAsync(3);
-            Console.WriteLine("bacon is ready");
-            Toast toast = await ToastBreadAsync(2);
-            ApplyButter(toast);
-            ApplyJam(toast);
-            Console.WriteLine("toast is ready");
-            Juice oj = PourOJ();
-            Console.WriteLine("oj is ready");
+            //Coffee cup = PourCoffee();
+            //Console.WriteLine("coffee is ready");
+            //Egg eggs = await FryEggsAsync(2);
+            //Console.WriteLine("eggs are ready");
+            //Bacon bacon = await FryBaconAsync(3);
+            //Console.WriteLine("bacon is ready");
+            //Toast toast = await ToastBreadAsync(2);
+            //ApplyButter(toast);
+            //ApplyJam(toast);
+            //Console.WriteLine("toast is ready");
+            //Juice oj = PourOJ();
+            //Console.WriteLine("oj is ready");
 
-            Console.WriteLine("Breakfast is ready!");
+            //Console.WriteLine("Breakfast is ready!");
 
             //2. asinhrono
             //Coffee cup = PourCoffee();
@@ -92,44 +92,44 @@ namespace AsinhroniTaski
             //Console.WriteLine("Breakfast is ready!");
 
             //5. WhenAny
-            //Coffee cup = PourCoffee();
-            //Console.WriteLine("coffee is ready");
-            //var eggsTask = FryEggsAsync(2);
-            //var baconTask = FryBaconAsync(3);
-            //var toastTask = MakeToastWithButterAndJamAsync(2);
+            Coffee cup = PourCoffee();
+            Console.WriteLine("coffee is ready");
+            var eggsTask = FryEggsAsync(2);
+            var baconTask = FryBaconAsync(3);
+            var toastTask = MakeToastWithButterAndJamAsync(2);
 
-            //var allTasks = new List<Task> { eggsTask, baconTask, toastTask };
-            //while (allTasks.Count > 0)
-            //{
-            //    Task finished = await Task.WhenAny(allTasks);
-            //    if (finished == eggsTask)
-            //    {
-            //        Console.WriteLine("eggs are ready");
-            //    }
-            //    else if (finished == baconTask)
-            //    {
-            //        Console.WriteLine("bacon is ready");
-            //    }
-            //    else if (finished == toastTask)
-            //    {
-            //        Console.WriteLine("toast is ready");
-            //    }
-            //    allTasks.Remove(finished);
-            //}
-            //Juice oj = PourOJ();
-            //Console.WriteLine("oj is ready");
-            //Console.WriteLine("Breakfast is ready!");
+            var allTasks = new List<Task> { eggsTask, baconTask, toastTask };
+            while (allTasks.Count > 0)
+            {
+                Task finished = await Task.WhenAny(allTasks);
+                if (finished == eggsTask)
+                {
+                    Console.WriteLine("eggs are ready");
+                }
+                else if (finished == baconTask)
+                {
+                    Console.WriteLine("bacon is ready");
+                }
+                else if (finished == toastTask)
+                {
+                    Console.WriteLine("toast is ready");
+                }
+                allTasks.Remove(finished);
+            }
+            Juice oj = PourOJ();
+            Console.WriteLine("oj is ready");
+            Console.WriteLine("Breakfast is ready!");
 
 
             Console.ReadLine();
         }
-        //static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
-        //{
-        //    var toast = await ToastBreadAsync(number);
-        //    ApplyButter(toast);
-        //    ApplyJam(toast);
-        //    return toast;
-        //}
+        static async Task<Toast> MakeToastWithButterAndJamAsync(int number)
+        {
+            var toast = await ToastBreadAsync(number);
+            ApplyButter(toast);
+            ApplyJam(toast);
+            return toast;
+        }
         private static Juice PourOJ()
         {
             Console.WriteLine("Stiskanje soka iz pomaranč");
