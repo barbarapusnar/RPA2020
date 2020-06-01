@@ -16,6 +16,12 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Vnesi poljubno besedilo" FontSize="16" Margin="20"/>
         <TextBox Grid.Row="1" AcceptsReturn="True" Name="txtVnos" Margin="20"/>
-        <Button Grid.Row="2" Height="40" Content="Piši" Margin="20" Click="Button_Click"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+        <Button  Height="40" Content="Piši" Margin="20" Click="Button_Click"/>
+        <Button  Height="40" Content="Beri" Margin="20" Click="Button_Click_1"/>
+        <Button  Height="40" Content="Beri iz mape Assets" Margin="20" Click="Button_Click_2"/>
+        <Button  Height="40" Content="Beri s Pickerjem" Margin="20" Click="Button_Click_3"/>
+        <Button  Height="40" Content="Beri iz mape glasba" Margin="20" Click="Button_Click_4"/>
+        </StackPanel>
     </Grid>
 </Page>

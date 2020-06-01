@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>58C67D17C0E562AB41298F6E4A7AC960F5CD78A2DD620CEF1677E307A5A6B8F8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>773B3BF3ABEB5865F4F8FAF5B9256351E47DD6DF0A778824F3756209F8702819</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>31e413e2-a7b6-4624-881b-4ab71c900b56_1.0.0.0_x86__ap931cyyw8x7m</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>31e413e2-a7b6-4624-881b-4ab71c900b56_ap931cyyw8x7m!App</RegisteredUserModeAppID>
     <RegisteredPackageID>31e413e2-a7b6-4624-881b-4ab71c900b56</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-29T10:35:21.435</Modified>
+      <Modified>2020-06-01T06:29:56.865</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\Datoteke.exe">
       <PackagePath>entrypoint\Datoteke.exe</PackagePath>
-      <Modified>2020-05-29T10:35:21.132</Modified>
+      <Modified>2020-06-01T06:28:17.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,6 +498,14 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T00:33:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\Assets\vaje.json">
+      <PackagePath>Assets\vaje.json</PackagePath>
+      <Modified>2020-06-01T06:14:01.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\Assets\MojaDatoteka.txt">
+      <PackagePath>Assets\MojaDatoteka.txt</PackagePath>
+      <Modified>2020-05-31T05:00:45.463</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-05-29T10:21:29.933</Modified>
@@ -538,15 +546,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\Datoteke.xr.xml">
       <PackagePath>Datoteke.xr.xml</PackagePath>
-      <Modified>2020-05-29T10:32:22.045</Modified>
+      <Modified>2020-06-01T06:05:13.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-29T10:32:22.076</Modified>
+      <Modified>2020-06-01T06:29:56.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-29T10:35:20.972</Modified>
+      <Modified>2020-06-01T06:29:56.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -554,11 +562,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-29T10:32:23.964</Modified>
+      <Modified>2020-06-01T06:29:56.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Datoteke\Datoteke\bin\x86\Debug\Core\Datoteke.exe">
       <PackagePath>Datoteke.exe</PackagePath>
-      <Modified>2020-05-29T10:35:21.418</Modified>
+      <Modified>2020-06-01T06:29:56.850</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
