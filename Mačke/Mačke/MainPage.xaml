@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Mačke.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mačke"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <ListView ItemsSource="{x:Bind MojeMacke}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Opis">
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{x:Bind name}" FontSize="24"></TextBlock>
+                        <StackPanel Margin="10" Grid.Column="1">
+                            <TextBlock Text="{x:Bind description}" TextWrapping="Wrap"/>
+                            <TextBlock>
+                                <Run>Inteligenca</Run>
+                                <Run Text="{x:Bind intelligence}"></Run>
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
