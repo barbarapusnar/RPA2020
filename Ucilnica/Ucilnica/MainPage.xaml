@@ -20,5 +20,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ProgressRing Name="mojPr" Width="100" Height="100"
+                      Foreground="Gray" VerticalAlignment="Center"
+                      HorizontalAlignment="Center"/>
     </Grid>
 </Page>

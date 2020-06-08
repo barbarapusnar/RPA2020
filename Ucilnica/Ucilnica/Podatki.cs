@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace Ucilnica
 {
 
-    public class Uč
+    public class Uc
     {
-        public List<Poglavja> VasPoglavja { get; set; }
+        public ObservableCollection<Poglavja> VasPoglavja { get; set; }
     }
 
     public class Poglavja

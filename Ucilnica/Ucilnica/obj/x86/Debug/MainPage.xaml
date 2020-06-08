@@ -12,14 +12,17 @@
         <ListView x:ConnectionId='2'                                   >
             <ListView.ItemTemplate>
                 <DataTemplate                            >
-                    <StackPanel x:ConnectionId='3' Orientation="Horizontal" Margin="10">
-                        <TextBlock x:ConnectionId='4'                      FontSize="24"/>
-                        <TextBlock x:ConnectionId='5'                         VerticalAlignment="Center"
+                    <StackPanel x:ConnectionId='4' Orientation="Horizontal" Margin="10">
+                        <TextBlock x:ConnectionId='5'                      FontSize="24"/>
+                        <TextBlock x:ConnectionId='6'                         VerticalAlignment="Center"
                                    Margin="10,0,0,0" FontSize="18"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ProgressRing x:ConnectionId='3' Name="mojPr" Width="100" Height="100"
+                      Foreground="Gray" VerticalAlignment="Center"
+                      HorizontalAlignment="Center"/>
     </Grid>
 </Page>
 
