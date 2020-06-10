@@ -37,8 +37,8 @@ namespace Ucilnica
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            mojPr.IsActive = true;
-            mojPr.Visibility = Visibility.Visible;
+            //mojPr.IsActive = true;
+            //mojPr.Visibility = Visibility.Visible;
             //await KlicServisa.NapolniPoglavja(VsaPoglavja);           
             a = await KlicServisa.GetPoglavjaAsync();
             foreach (var x in a.VasPoglavja)
@@ -46,8 +46,13 @@ namespace Ucilnica
             var izbranoPoglavje = VsaPoglavja.FirstOrDefault();
             foreach (var y in izbranoPoglavje.modules)
                 Vsebina.Add(y);
-            mojPr.IsActive = false;
-            mojPr.Visibility = Visibility.Collapsed;
+            //mojPr.IsActive = false;
+            //mojPr.Visibility = Visibility.Collapsed;
+        }
+
+        private void BtmHamburger_Click(object sender, RoutedEventArgs e)
+        {
+            mojSv.IsPaneOpen = !mojSv.IsPaneOpen;
         }
     }
 }

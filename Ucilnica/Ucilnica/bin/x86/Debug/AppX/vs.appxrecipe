@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-08T07:23:37.214</Modified>
+      <Modified>2020-06-10T07:59:01.194</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Ucilnica.exe">
       <PackagePath>entrypoint\Ucilnica.exe</PackagePath>
-      <Modified>2020-06-08T07:23:36.910</Modified>
+      <Modified>2020-06-10T07:59:00.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\barbara\.nuget\packages\microsoft.aspnet.webapi.client\5.2.7\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -554,15 +554,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Ucilnica.xr.xml">
       <PackagePath>Ucilnica.xr.xml</PackagePath>
-      <Modified>2020-06-08T07:23:36.762</Modified>
+      <Modified>2020-06-10T07:58:38.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-08T07:23:36.767</Modified>
+      <Modified>2020-06-10T07:57:53.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-08T07:23:36.768</Modified>
+      <Modified>2020-06-10T07:59:00.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -574,7 +574,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Core\Ucilnica.exe">
       <PackagePath>Ucilnica.exe</PackagePath>
-      <Modified>2020-06-08T07:23:37.199</Modified>
+      <Modified>2020-06-10T07:59:01.180</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

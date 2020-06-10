@@ -11,32 +11,43 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <ListView ItemsSource="{x:Bind VsaPoglavja}">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Poglavja">
-                    <StackPanel Orientation="Horizontal" Margin="10">
-                        <TextBlock Text="{x:Bind name}" FontSize="24"/>
-                        <TextBlock Text="{x:Bind summary}" VerticalAlignment="Center"
-                                   Margin="10,0,0,0" FontSize="18"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView Grid.Row="1" Margin="10" ItemsSource="{x:Bind Vsebina}">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Module">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="{x:Bind modicon}"/>
-                        <TextBlock Text="{x:Bind name}" Margin="10,0,0,0"/>
-                      
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ProgressRing Name="mojPr" Width="100" Height="100"
-                      Foreground="Gray" VerticalAlignment="Center"
-                      HorizontalAlignment="Center"/>
+        <RelativePanel Grid.Row="0">
+            <Button Name="btmHamburger"
+                    RelativePanel.AlignLeftWithPanel="True"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36" Content="&#xE700;" Width="65" Click="BtmHamburger_Click"/>
+            <TextBlock Name="txtNaslov" RelativePanel.RightOf="btmHamburger"
+                       FontSize="28" FontWeight="Bold" Margin="5"
+                       Text="Spletna učilnica ŠC Nova Gorica"/>
+        </RelativePanel>
+        <SplitView Grid.Row="1" Name="mojSv"
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="200"
+                   CompactPaneLength="65">
+            <SplitView.Pane>
+                <ListView Name="masterLv"
+                          ItemsSource="{x:Bind VsaPoglavja}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:Poglavja">
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                                <Ellipse Width="50" Height="50">
+                                    <Ellipse.Fill>
+                                        <SolidColorBrush Color="Green"/>
+                                        <!--<ImageBrush ImageSource="{x:Bind imagePath}"/>-->
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <TextBlock Text="{x:Bind name}" Margin="5,15,0,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame Name="myFrame"/>
+            </SplitView.Content>
+        </SplitView>
     </Grid>
 </Page>
