@@ -44,7 +44,7 @@ namespace Ucilnica
         public string customdata { get; set; }
         public int completion { get; set; }
         public Completiondata completiondata { get; set; }
-        public Content[] contents { get; set; }
+        public ObservableCollection<Content> contents { get; set; }
         public Contentsinfo contentsinfo { get; set; }
     }
 

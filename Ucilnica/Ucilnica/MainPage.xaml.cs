@@ -24,11 +24,15 @@ namespace Ucilnica
     public sealed partial class MainPage : Page
     {
         public ObservableCollection<Poglavja> VsaPoglavja { get; set; }
+        public ObservableCollection<Module> Vsebina { get; set; }
+        public ObservableCollection<Content> VseDatoteke { get; set; }
         Uc a = new Uc();
         public MainPage()
         {
             this.InitializeComponent();
             VsaPoglavja = new ObservableCollection<Poglavja>();
+            Vsebina = new ObservableCollection<Module>();
+            VseDatoteke = new ObservableCollection<Content>();
         }
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
@@ -39,6 +43,9 @@ namespace Ucilnica
             a = await KlicServisa.GetPoglavjaAsync();
             foreach (var x in a.VasPoglavja)
                 VsaPoglavja.Add(x);
+            var izbranoPoglavje = VsaPoglavja.FirstOrDefault();
+            foreach (var y in izbranoPoglavje.modules)
+                Vsebina.Add(y);
             mojPr.IsActive = false;
             mojPr.Visibility = Visibility.Collapsed;
         }

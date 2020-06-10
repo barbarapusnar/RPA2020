@@ -39,6 +39,7 @@ namespace Ucilnica
                 {
                     var obj = item.GetObject();
                     Poglavja p = new Poglavja();
+                    p.modules = new ObservableCollection<Module>();
                     foreach (var key in obj.Keys)
                     {
                         IJsonValue val;
@@ -54,6 +55,50 @@ namespace Ucilnica
                                 break;
                             case "summary":
                                 p.summary = Windows.Data.Html.HtmlUtilities.ConvertToText(val.GetString());
+                                break;
+                            case "modules":
+                                var vse = val.GetArray();
+                                var list = from i in vse select i.GetObject();
+                                foreach (var a in list)
+                                {
+                                    Module v = new Module();
+                                    v.contents = new ObservableCollection<Content>();
+                                    foreach (var k in a.Keys)
+                                    {
+                                        IJsonValue val1;
+                                        if (!a.TryGetValue(k, out val1)) continue;
+                                        switch (k)
+                                        {
+                                            case "name":
+                                                v.name = val1.GetString();break;
+                                            case "modicon":
+                                                v.modicon = val1.GetString();break;
+                                            case "contents":
+                                                var vse1 = val.GetArray();
+                                                var list1 = from i in vse1 select i.GetObject();
+                                                foreach (var b in list1)
+                                                {
+                                                    Content vs = new Content();
+                                                    foreach (var k2 in b.Keys)
+                                                    {
+                                                        IJsonValue val2;
+                                                        if (!b.TryGetValue(k2, out val2)) continue;
+                                                        switch (k2)
+                                                        {
+                                                            case "fileurl":
+                                                                vs.fileurl = val2.GetString();break;
+                                                            case "filename":
+                                                                vs.filename = val2.GetString();break;
+                                                        }//konec switch k2
+                                                    }//konec for k2
+                                                    v.contents.Add(vs);
+                                                }
+
+                                                break;
+                                        }//konec switch k
+                                    }//konec for k
+                                    p.modules.Add(v);
+                                }//konec for a
                                 break;
                         }//konec switch
                     }//konec for key

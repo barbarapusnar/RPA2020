@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <ListView ItemsSource="{x:Bind VsaPoglavja}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Poglavja">
@@ -16,6 +20,17 @@
                         <TextBlock Text="{x:Bind name}" FontSize="24"/>
                         <TextBlock Text="{x:Bind summary}" VerticalAlignment="Center"
                                    Margin="10,0,0,0" FontSize="18"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="1" Margin="10" ItemsSource="{x:Bind Vsebina}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Module">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{x:Bind modicon}"/>
+                        <TextBlock Text="{x:Bind name}" Margin="10,0,0,0"/>
+                      
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
