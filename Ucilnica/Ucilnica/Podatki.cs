@@ -24,6 +24,7 @@ namespace Ucilnica
         public int hiddenbynumsections { get; set; }
         public bool uservisible { get; set; }
         public ObservableCollection<Module> modules { get; set; }
+        public string imagePath { get; set; }
     }
 
     public class Module

@@ -385,8 +385,26 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\1.png">
+      <PackagePath>Assets\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\2.png">
+      <PackagePath>Assets\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\3.png">
+      <PackagePath>Assets\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\4.png">
+      <PackagePath>Assets\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\5.png">
+      <PackagePath>Assets\5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\6.png">
+      <PackagePath>Assets\6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\7.png">
+      <PackagePath>Assets\7.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -414,6 +432,9 @@
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Ucilnica.xr.xml">
       <PackagePath>Ucilnica.xr.xml</PackagePath>

@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-10T07:59:01.194</Modified>
+      <Modified>2020-06-10T08:10:11.823</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Ucilnica.exe">
       <PackagePath>entrypoint\Ucilnica.exe</PackagePath>
-      <Modified>2020-06-10T07:59:00.883</Modified>
+      <Modified>2020-06-10T08:10:09.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\barbara\.nuget\packages\microsoft.aspnet.webapi.client\5.2.7\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -514,9 +514,33 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T00:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-06-05T10:04:54.411</Modified>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\1.png">
+      <PackagePath>Assets\1.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\2.png">
+      <PackagePath>Assets\2.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\3.png">
+      <PackagePath>Assets\3.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\4.png">
+      <PackagePath>Assets\4.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.984</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\5.png">
+      <PackagePath>Assets\5.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.985</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\6.png">
+      <PackagePath>Assets\6.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\7.png">
+      <PackagePath>Assets\7.png</PackagePath>
+      <Modified>2020-06-10T08:03:52.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -552,17 +576,21 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-24T08:46:50.154</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2020-06-05T10:04:54.411</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Ucilnica.xr.xml">
       <PackagePath>Ucilnica.xr.xml</PackagePath>
-      <Modified>2020-06-10T07:58:38.974</Modified>
+      <Modified>2020-06-10T08:10:09.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-10T07:57:53.673</Modified>
+      <Modified>2020-06-10T08:10:09.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-06-10T07:59:00.742</Modified>
+      <Modified>2020-06-10T08:10:09.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -570,11 +598,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-05T10:22:01.271</Modified>
+      <Modified>2020-06-10T08:10:11.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\RPA2020\Ucilnica\Ucilnica\bin\x86\Debug\Core\Ucilnica.exe">
       <PackagePath>Ucilnica.exe</PackagePath>
-      <Modified>2020-06-10T07:59:01.180</Modified>
+      <Modified>2020-06-10T08:10:11.804</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

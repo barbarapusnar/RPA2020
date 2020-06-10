@@ -58,8 +58,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
-      <RootProperty Name="Color" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Name" />

@@ -15,11 +15,11 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <RelativePanel Grid.Row="0">
-            <Button x:ConnectionId='7' Name="btmHamburger"
+            <Button x:ConnectionId='8' Name="btmHamburger"
                     RelativePanel.AlignLeftWithPanel="True"
                     FontFamily="Segoe MDL2 Assets"
                     FontSize="36" Content="&#xE700;" Width="65"                           />
-            <TextBlock x:ConnectionId='8' Name="txtNaslov" RelativePanel.RightOf="btmHamburger"
+            <TextBlock x:ConnectionId='9' Name="txtNaslov" RelativePanel.RightOf="btmHamburger"
                        FontSize="28" FontWeight="Bold" Margin="5"
                        Text="Spletna učilnica ŠC Nova Gorica"/>
         </RelativePanel>
@@ -35,8 +35,8 @@
                             <StackPanel x:ConnectionId='4' Orientation="Horizontal" Margin="0,5,0,5">
                                 <Ellipse Width="50" Height="50">
                                     <Ellipse.Fill>
-                                        <SolidColorBrush Color="Green"/>
-                                        <!--<ImageBrush ImageSource="{x:Bind imagePath}"/>-->
+                                        <!--<SolidColorBrush Color="Green"/>-->
+                                        <ImageBrush x:ConnectionId='6'                                 />
                                     </Ellipse.Fill>
                                 </Ellipse>
                                 <TextBlock x:ConnectionId='5'                      Margin="5,15,0,0"/>
@@ -46,7 +46,7 @@
                 </ListView>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='6' Name="myFrame"/>
+                <Frame x:ConnectionId='7' Name="myFrame"/>
             </SplitView.Content>
         </SplitView>
     </Grid>

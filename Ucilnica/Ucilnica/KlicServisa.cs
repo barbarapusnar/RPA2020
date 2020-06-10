@@ -28,6 +28,7 @@ namespace Ucilnica
         {
             string url = "https://eucilnica.scng.si/webservice/rest/server.php?wstoken=df95bf67c1672ffe7a5e48df58cee724&wsfunction=core_course_get_contents&courseid=110&moodlewsrestformat=json";
             Uc result = new Uc();
+            int števec = 1;
             result.VasPoglavja = new ObservableCollection<Poglavja>();
             try
             {
@@ -52,6 +53,9 @@ namespace Ucilnica
                                 break;
                             case "name":
                                 p.name = val.GetString();
+                                p.imagePath = "/Assets/" + števec + ".png";
+                                števec++;
+                                if (števec > 7) števec = 7;
                                 break;
                             case "summary":
                                 p.summary = Windows.Data.Html.HtmlUtilities.ConvertToText(val.GetString());
